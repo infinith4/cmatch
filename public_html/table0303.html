@@ -1,0 +1,274 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Flexigrid</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="css/flexigrid.pack.css" />
+	<script type="text/javascript"
+		src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="js/flexigrid.pack.js"></script>
+</head>
+<body>
+
+	<table class="flexme3" style="display: none">
+	<?php
+
+while ($table =mysql_fetch_assoc($recordset)){
+
+$privrecord=mysql_query("SELECT * FROM privacyprofiles WHERE memberid='{$table[memberid]}'");
+$privtable =mysql_fetch_assoc($privrecord);
+?>
+
+
+
+	
+	<tr>
+		<div class="boxLink">
+ 		<td align="center">
+ 		<a href="membersclass.php?membersid=<?php print($table[memberid]);?>">
+ 		<b><font size="2" color="#3399ff" onmouseout="this.color='#3399ff'" onmouseover="this.color='#cc33ff'">
+ 		<?php print(htmlspecialchars($table['handle'])); ?>
+ 		</font></b>
+ 		</a>
+ 		</td>
+		<td>
+		<font size="2">
+		<?php
+			if($privtable[privdep]==='1'){
+				print(htmlspecialchars($table['department']));
+			}else{
+				print("");
+			}
+		?>
+		</font>
+		</td>
+ 		<td>
+ 		<font size="2">
+ 		<?php
+			if($privtable[privcon]==='1'){
+				print(htmlspecialchars($table['concentration']));
+			}else{
+				print("");
+			}
+		?>
+		</font>
+		</td>
+ 		<td>
+ 		<font size="2">
+ 		<?php
+			if($privtable[privcou]==='1'){
+				print(htmlspecialchars($table['course']));
+			}else{
+				print("");
+			}
+		?>
+		</font>
+		</td>
+ 		<td>
+ 		<font size="2">
+ 		<?php
+			if($privtable[privyea]==='1'){
+				print(htmlspecialchars($table['yearly']));
+			}else{
+				print("");
+			}
+		?>
+		</font>
+		</td>
+ 		<td>
+ 		<font size="2">
+ 		<?php
+			if($privtable[privmes]==='1'){
+				print(htmlspecialchars($table['message']));
+			}else{
+				print("");
+			}
+		?>
+		</font>
+		</td>
+ 		<td>
+ 		<font size="2">
+ 		<?php
+			if($privtable[privsex]==='1'){
+				print(htmlspecialchars($table['sex']));
+			}else{
+				print("");
+			}
+		?>
+		</font>
+ 		</td>
+ 		<td>
+ 		<font size="2">
+ 		<?php
+			if($privtable[privcom]==='1'){
+				print(htmlspecialchars($table['companyfriendship']));
+			}else{
+				print("");
+			}
+		?>
+		</font>
+ 		</td>
+ 		<td>
+ 		<font size="2">
+ 		<?php
+			if($privtable[privpla]==='1'){
+				print(htmlspecialchars($table['place']));
+			}else{
+				print("");
+			}
+		?>
+		</font>
+ 		</td>
+ 		<td>
+ 		<font size="2">
+ 		<?php
+			if($privtable[privint]==='1'){
+				print(htmlspecialchars($table['interact']));
+			}else{
+				print("");
+			}
+		?>
+		</font>
+		</td>
+ 		<td>
+ 		<font size="2">
+ 		<?php
+			if($privtable[privsns]==='1'){
+				print(htmlspecialchars($table['sns']));
+			}else{
+				print("");
+			}
+		?>
+		</font>
+		</td>
+ 	</tr>
+ 	
+ 	
+<?php 
+}
+
+?>
+	</table>
+
+	<script type="text/javascript">
+		$('.flexme1').flexigrid();
+		$('.flexme2').flexigrid({
+			height : 'auto',
+			striped : false
+		});
+
+		$(".flexme3").flexigrid({
+			url : 'post-xml.php',
+			dataType : 'xml',
+			colModel : [ {
+				display : '名前',
+				name : 'handle',
+				width : 60,
+				sortable : true,
+				align : 'center'
+			}, {
+				display : '学部',
+				name : 'department',
+				width : 70,
+				sortable : true,
+				align : 'left'
+			}, {
+				display : '学科',
+				name : 'concentration',
+				width : 120,
+				sortable : true,
+				align : 'left'
+			}, {
+				display : 'コース',
+				name : 'course',
+				width : 60,
+				sortable : true,
+				align : 'left',
+				
+			}, {
+				display : '年次',
+				name : 'yearly',
+				width : 30,
+				sortable : true,
+				align : 'right'
+			}, {
+				display : '紹介文',
+				name : 'message',
+				width : 200,
+				sortable : true,
+				align : 'right'
+			}, {
+				display : '性別',
+				name : 'numcode',
+				width : 30,
+				sortable : true,
+				align : 'right'
+			}, {
+				display : '交際ステータス',
+				name : 'numcode',
+				width : 70,
+				sortable : true,
+				align : 'right'
+			}, {
+				display : 'よく出没する場所',
+				name : 'numcode',
+				width : 80,
+				sortable : true,
+				align : 'right'
+			}, {
+				display : '知り合いたい対象',
+				name : 'numcode',
+				width : 100,
+				sortable : true,
+				align : 'right'
+			}, {
+				display : '参加中のSNS',
+				name : 'numcode',
+				width : 100,
+				sortable : true,
+				align : 'right'
+			} ],
+			buttons : [ {
+				name : 'Add',
+				bclass : 'add',
+				onpress : test
+			}, {
+				name : 'Delete',
+				bclass : 'delete',
+				onpress : test
+			}, {
+				separator : true
+			} ],
+			searchitems : [ {
+				display : '名前',
+				name : 'handle'
+			}, {
+				display : '学部',
+				name : 'department',
+				isdefault : true
+			} ],
+			sortname : "handle",
+			sortorder : "asc",
+			usepager : true,
+			title : 'メンバー',
+			useRp : true,
+			rp : 35,
+			showTableToggleBtn : true,
+			width : 1080,
+			height : 500
+			
+		});
+
+		function test(com, grid) {
+			if (com == 'Delete') {
+				confirm('Delete ' + $('.trSelected', grid).length + ' items?')
+			} else if (com == 'Add') {
+				alert('Add New Item');
+			}
+		}
+	</script>
+
+</body>
+</html>

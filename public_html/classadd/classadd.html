@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<title>講義追加</title>
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<style type="text/css">
+
+<!--
+
+a {  text-decoration: none}
+
+
+
+-->
+<!--
+body { background: #ffffff url("img/img04.jpg") fixed left top }
+-->
+</style>
+</head>
+
+<?php
+	$_POST[]
+?>
+
+<body>
+
+<font size="5" color="#000000"><b>講義追加</b></font><br><br>
+
+<a href="http://www-kulas.jimu.kochi-u.ac.jp/public/syllabus/SyllabusAll.aspx">シラバス検索</a>より情報を取得し、下記の全てに入力して下さい。
+
+
+
+          <form method="POST" action="submitclassadd.php">
+<table border="0">
+	<tbody>
+	<tr>
+		<td>時間割コード</td>
+		<td><input size="35" type="text" name="code"></td>
+	</tr>
+	<tr>
+		<td>科目名</td>
+		<td><input size="35" type="text" name="subject"></td>
+	</tr>
+	<tr>
+		<td>担当教員</td>
+		<td><input size="35" type="text" name="teacher"></td>
+	</tr>
+	<tr>
+		<td>開講期</td>
+		<td>
+			<input type="radio" name="term" value="1">1学期
+			<input type="radio" name="term" value="2">2学期
+		</td>
+	</tr>
+	<tr>
+		<td>曜日・時限(例:月1)</td>
+		<td><input size="5" type="text" name="time"></td>
+	</tr>
+	<tr>
+		<td>対象年次(例：1(半角))</td>
+		<td><input size="5" type="text" name="yearly"></td>
+	</tr>
+	<!--
+	<tr>
+		<td>内容</td>
+		<td>
+			<textarea name="text" cols="80" rows="25"></textarea>
+		</td>
+	</tr>
+	-->
+	<tr>
+	
+		<td colspan="2" align="center"><br>
+		<input type="submit" name="exereg" value="送信">
+			<!-- <input type="submit" name="cancelreg" value="キャンセル"> -->
+			<br>
+			<font size="4" color="#FF0000">送信ボタンを押す前に、送信する内容をご確認ください。</font>
+			<br><br><br>
+			</td>
+	</tr>
+	
+	</tbody>
+</table>
+</form> 
+
+</body>

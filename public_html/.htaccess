@@ -1,0 +1,3 @@
+php_value session.name SESSID
+php_value session.cookie_lifetime 3600
+setEnv PERL5LIB /home/cmatch/public_html

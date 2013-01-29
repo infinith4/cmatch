@@ -1,0 +1,384 @@
+﻿.border	{
+	width:800px;
+	background: #EEE;
+	border:2px solid #999; 
+	padding: 10px;
+	margin-left:20px;
+	margin-right:5px;
+	margin-bottom:10px;
+	text-align: left;
+}
+.radius	{
+	-webkit-border-radius: 10px;	/* Safari,Google Chrome用 */
+	-moz-border-radius: 10px;	/* Firefox用 */
+}
+
+#loginmes-box {
+          width : 650ox;
+          border: 1px solid #989898;
+          background-color: #EFEFEF;
+}
+#joinmes-box {
+          width : 650ox;
+          border: 2px solid #989898;
+          background-color: #EFEFEF;
+}
+#topic-box {
+          width : 300ox;
+          border: 1px solid #989898;
+          background-color: #f5f5f5;
+          padding-left:10px;/*外側の空白 */
+}
+#membersclasstable-box {
+          width : auto;
+          border: 3px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:10px;/*外側の空白 */
+          margin-left:10px;/*外側の空白 */
+          margin-bottom:10px;/*外側の空白 */
+          padding-top:5px;/*内側左の空白 */
+          padding-left:10px;/*内側左の空白 */
+          padding-right:10px;/*内側右の空白 */
+          padding-bottom:10px;/*内側右の空白 */
+}
+#memclapro-box {
+          width : auto;
+          border: 3px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:10px;/*外側の空白 */
+          margin-left:10px;/*外側の空白 */
+          margin-bottom:10px;/*外側の空白 */
+          padding-top:5px;/*内側左の空白 */
+          padding-left:10px;/*内側左の空白 */
+          padding-right:10px;/*内側右の空白 */
+          padding-bottom:10px;/*内側右の空白 */
+}
+
+#indextable-box {
+          width : auto;
+          border: 3px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:150px;/*外側の空白 */
+          margin-left:150px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:20px;/*内側右の空白 */
+          padding-bottom:20px;/*内側右の空白 */
+}
+#site-box {
+          width : 800px;
+          border: 3px solid #989898;
+          background-color: #EFEFEF;
+}
+#in-box {
+          width : 760px;
+          border: 3px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:0px;/*外側の空白 */
+          margin-left:20px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:20px;/*内側右の空白 */
+}
+
+#project-box {
+          width : 1010px;
+          border: 2px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:0px;/*外側の空白 */
+          margin-left:20px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:20px;/*内側右の空白 */
+}
+#project-left {
+          /*width : 960px; */
+          /*border: 2px solid #989898; */
+          /*background-color: #EFEFEF;*/
+          margin-right:0px;/*外側の空白 */
+          margin-left:20px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:20px;/*内側左の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:20px;/*内側右の空白 */
+}
+#promes {
+          width : 600px; 
+          border: 1px solid #989898; 
+          background-color: #FFFFFF;
+          margin-top:10px;/*外側の空白 */
+          margin-right:20px;/*外側の空白 */
+          margin-left:20px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:10px;/*内側左の空白 */
+          padding-right:10px;/*内側右の空白 */
+          padding-bottom:10px;/*内側右の空白 */
+}
+#procom {
+          width : 600px; 
+          border: 1px solid #989898; 
+          background-color: #0099cc;
+          margin-top:10px;/*外側の空白 */
+          margin-right:20px;/*外側の空白 */
+          margin-left:20px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:10px;/*内側左の空白 */
+          padding-right:10px;/*内側右の空白 */
+          padding-bottom:10px;/*内側右の空白 */
+}
+
+#procomnew {
+          width : 570px; 
+          border: 1px solid #989898; 
+          background-color: #FFFFFF;
+          margin-top:5px;/*外側の空白 */
+          margin-right:5px;/*外側の空白 */
+          margin-left:5px;/*外側の空白 */
+          margin-bottom:10px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:10px;/*内側左の空白 */
+          padding-right:10px;/*内側右の空白 */
+          padding-bottom:10px;/*内側右の空白 */
+}
+#procomrep {
+          width : 550px; 
+          border: 1px solid #989898; 
+          background-color: #C0C0C0;
+          margin-top:5px;/*外側の空白 */
+          margin-right:5px;/*外側の空白 */
+          margin-left:5px;/*外側の空白 */
+          margin-bottom:10px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:10px;/*内側左の空白 */
+          padding-right:10px;/*内側右の空白 */
+          padding-bottom:10px;/*内側右の空白 */
+}
+
+#frommes-box {
+          width : auto;
+          border: 3px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:0px;/*外側の空白 */
+          margin-left:20px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:20px;/*内側右の空白 */
+}
+#frommes-box {
+          width : 700px;
+          border: 3px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:0px;/*外側の空白 */
+          margin-left:20px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:20px;/*内側右の空白 */
+}
+#menumes-box {
+          width : 150px;
+          border: 2px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:20px;/*外側の空白 */
+          margin-left:10px;/*外側の空白 */
+          margin-bottom:10px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:0px;/*内側左の空白 */
+          padding-right:10px;/*内側右の空白 */
+          padding-bottom:10px;/*内側右の空白 */
+}
+#send-box {
+          width : 700px;
+          border: 3px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:20px;/*外側の空白 */
+          margin-left:20px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:50px;/*内側左の空白 */
+          padding-right:40px;/*内側右の空白 */
+}
+#message-box {
+          width : 700px;
+          border: 3px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:20px;/*外側の空白 */
+          margin-left:20px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:50px;/*内側左の空白 */
+          padding-right:40px;/*内側右の空白 */
+}
+#mes-box {
+          width : 500px;
+          border: 1px solid #989898;
+          background-color: #FFFFFF;
+          margin-right:0px;/*外側の空白 */
+          margin-left:0px;/*外側の空白 */
+          margin-bottom:20px;/*外側の空白 */
+          padding-top:20px;/*内側左の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:20px;/*内側右の空白 */
+          padding-bottom:20px;/*内側右の空白 */
+}
+#join-in-box {
+          width : 630px;
+          border: 3px solid #989898;
+          background-color: #EFEFEF;
+          margin-right:0px;/*外側の空白 */
+          margin-left:20px;/*外側の空白 */
+          padding-top:10px;/*内側左の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:20px;/*内側右の空白 */
+}
+#statement-box {
+          /*width : auto; */
+          /*border: 3px solid #989898; */
+          /*background-color: #EFEFEF; */
+          margin-right:0px;/*外側の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:0px;/*内側右の空白 */
+}
+#form-box {
+          width : 250px;
+          border: 1px solid #989898;
+          background-color: #EFEFEF;
+          float: right;/*左に寄せる */
+          margin-right:40px;/*外側の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:30px;/*内側右の空白 */
+}
+#join-form-box {
+          width : 450px;
+          border: 1px solid #989898;
+          background-color: #EFEFEF;
+          float: right;/*左に寄せる */
+          margin-right:30px;/*外側の空白 */
+          margin-bottom:10px;/*外側の空白 */
+          padding-left:20px;/*内側左の空白 */
+          padding-right:40px;/*内側右の空白 */
+}
+#header-box {
+          border-bottom: 0px solid #FF9900;
+          background-image: url('img/logo01-2.PNG');
+          
+          
+}
+
+#center-box {
+			margin-right:auto;
+		 	margin-left:auto;
+}
+
+
+#left-box {
+          float: left;
+          margin-right:auto;
+          width: 510px;
+}
+
+#right-box {
+          float: right;
+}
+
+#bottom-box {
+          color: #FFFFFF;
+          background-color: #000000;
+          margin-bottom:0px;/*外側の空白 */
+          padding-top:5px;
+          padding-bottom:1px;
+}
+
+.category {　　　} 
+
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*\*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+div.header {
+color: #FFFFFF;
+background-color: #000000
+}
+p.header {
+color: #FFFFFF;
+background-color: #000000
+}
+
+p.boder {
+color: #FFFFFF;
+background-color: #C0C0C0
+}
+
+
+
+li  {float:left;display:block;}
+
+.box1 {height:26px;}
+
+.on  {
+      background-color:#FF9900;
+      width:110px;
+      height:26px;
+      margin-right:5px;
+      text-align:center;
+     }
+
+.off {
+      background-color:#FFCCFF;
+      width:110px;
+      height:26px;
+      margin-right:5px;
+      text-align:center;
+     }
+
+.on a         {
+               text-decoration:none;
+               display:block;
+               margin-top:5px;
+              }
+.on a:link    {color:#ffffff;}
+.on a:visited {color:#ffffff;}
+.on a:hover   {color:#ffffff;}
+
+.off a         {
+                text-decoration:underline;
+                display:block;
+                margin-top:5px;
+               }
+.off a:link    {color:#000000;}
+.off a:visited {color:#000000;}
+.off a:hover   {color:#FFFFFF;}
+
+.box2
+    {
+     clear:both;
+     border-top:solid 10px #FF9900;
+     border-bottom:solid 1px #FF9900;
+     border-left:solid 1px #FF9900;
+     border-right:solid 1px #FF9900;
+     /*background-color:silver;*/
+    }
+ul  {margin:0px;}
+

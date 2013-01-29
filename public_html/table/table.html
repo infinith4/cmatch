@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ch12-1 グリッドの列を並べ替える</title>
+<link href="blue/style.css" rel="stylesheet" type="text/css" />
+<script src="../../scripts/jquery-1.3.1.js" type="text/javascript"></script>
+<script src="jquery.tablesorter.js" type="text/javascript"></script>
+<!--
+<script src="jquery.tablesorter.pager.js" type="text/javascript"></script>
+-->
+<script type="text/javascript">
+$(function() {
+  $("table").tablesorter();
+  //$("table").tablesorter({debug: true});
+  //$("table").tablesorter({ headers: { 1: {sorter:false}} });
+  //$("table").tablesorter({sortList:[[2,1]]});
+});   
+</script>     
+</head>
+<body>
+<div id="demo">   
+  <table cellspacing="1" class="tablesorter">   
+    <thead>   
+      <tr>
+        <th>No</th>            
+        <th>名前</th>      
+        <th>年齢</th>   
+        <th>金額</th>   
+        <th>値引</th>      
+      </tr>   
+    </thead>   
+    <tbody>   
+      <tr>   
+        <td>1</td>   
+        <td>山田 太郎</td>   
+        <td>50</td>   
+        <td>50,000</td>   
+        <td>10%</td>      
+      </tr>
+      <tr>   
+        <td>2</td>   
+        <td>鈴木　花子</td>   
+        <td>40</td>   
+        <td>40,000</td>   
+        <td>5%</td>      
+      </tr>  
+      <tr>   
+        <td>3</td>   
+        <td>一戸　健二</td>   
+        <td>35</td>   
+        <td>35,000</td>   
+        <td>3%</td>      
+      </tr>    
+      <tr>   
+        <td>4</td>   
+        <td>佐藤　秋子</td>   
+        <td>20</td>   
+        <td>20,000</td>   
+        <td>2%</td>      
+      </tr>  
+      <tr>   
+        <td>5</td>   
+        <td>田中　良美</td>   
+        <td>28</td>   
+        <td>28,000</td>   
+        <td>8%</td>      
+      </tr> 
+    </tbody>   
+  </table>   
+</div>
+</body>
+</html>

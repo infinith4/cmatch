@@ -1,0 +1,29 @@
+/**********************************
+
+Use: Main Screen Import
+
+***********************************/
+
+@import "reset.css";
+@import "core.css";
+
+@import "cmxformTemplate.css";
+@import "cmxform.css";
+
+
+#commentForm
+{
+  width: 500px;
+}
+#commentForm label
+{
+  width: 250px;
+}
+#commentForm label.error, #commentForm input.submit
+{
+  margin-left: 253px;
+}
+fieldset
+{
+  margin: 10px;
+}
